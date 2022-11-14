@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Troy's Store</title>
+        <script type="text/javascript" src="formChecker.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to Troy's Store!</h1>
+        <form action="customerBackend.php" onsubmit="return validator()">
+            <label for="username">Username:</label>
+            <input type="email" id="username" name="username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <br><br><br><br><br><br>
+
+            <h2>Our Products:</h2>
+
+            <img src="https://media.ed.edmunds-media.com/ford/f-150/2021/oem/2021_ford_f-150_crew-cab-pickup_lariat_fq_oem_1_1600.jpg" width="30%" height="30%">
+            <h3>Ford F150</h3>
+            <p>Price = $40,000</p>
+            <input type="checkbox" id="f150" name="f150">
+            <br><br><br><br>
+
+            <img src="https://assets-prd.ignimgs.com/2021/01/25/dsc-0602-1611618075267.JPG" width="30%" height="30%">
+            <h3>M1 Macbook Pro</h3>
+            <p>Price = $2,000</p>
+            <input type="checkbox" id="macbook" name="macbook">
+            <br><br><br><br>
+
+            <img src="https://media.npr.org/assets/img/2020/07/23/rv_3_custom-c9c9c7ca7deb0056c6ee01cefd4775cd923fe3d6.jpg" width="30%" height="30%">
+            <h3>RV</h3>
+            <p>Price = $60,000</p>
+            <input type="checkbox" id="rv" name="rv">
+            <br><br><br><br>
+
+            <h2>Choose Shipping Method:</h2>
+            <input type="radio" id="free" name="free">
+            <label for="free">Free 7 Day</label><br>
+            <input type="radio" id="overnight" name="overnight">
+            <label for="overnight">$50.00 over night</label><br>
+            <input type="radio" id="threeDay" name="threeDay">
+            <label for="threeDay">$5.00 three day</label><br>
+
+            <br><br><br><br>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
